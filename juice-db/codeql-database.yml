@@ -1,13 +1,11 @@
 ---
-sourceLocationPrefix: C:\repo_for_codeql\juice-shop
-baselineLinesOfCode: 43297
+sourceLocationPrefix: /src/juice-shop
+baselineLinesOfCode: 64451
 unicodeNewlines: true
 columnKind: utf16
 primaryLanguage: javascript
 creationMetadata:
   sha: e2221d04db98331dd0b294f900157a131dddb77d
-  cliVersion: 2.24.0
-  creationTime: 2026-02-05T09:11:10.537423600Z
-overlayBaseDatabase: false
-overlayDatabase: false
+  cliVersion: 2.16.0
+  creationTime: 2026-02-05T11:01:31.067120670Z
 finalised: true
