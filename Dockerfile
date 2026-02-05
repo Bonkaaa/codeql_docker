@@ -9,8 +9,11 @@ RUN apt-get update && \
 # Set working dir for tools
 WORKDIR /opt
 
+# Argument for CodeQL version
+ARG CODEQL_VERSION
+
 # Download CodeQL bundle
-RUN wget https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.16.0/codeql-bundle-linux64.tar.gz -O codeql.tar.gz && \
+RUN wget https://github.com/github/codeql-action/releases/download/${CODEQL_VERSION}/codeql-bundle-linux64.tar.gz -O codeql.tar.gz && \
     tar -xzf codeql.tar.gz && \
     rm codeql.tar.gz
 

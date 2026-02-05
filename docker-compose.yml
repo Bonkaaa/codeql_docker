@@ -1,0 +1,37 @@
+services:
+  services:
+  # Container 1: Latest Version (e.g., v2.24.0)
+  scanner-v2-24:
+    build:
+      context: .
+      args:
+        CODEQL_VERSION: codeql-bundle-v2.24.0
+    volumes:
+      - ./juice-shop:/src
+      - ./results/v2-24:/results
+    command: bash scan.sh
+    working_dir: /src
+
+  # Container 2: Older Version (e.g., v2.23.0)
+  scanner-v2-23:
+    build:
+      context: .
+      args:
+        CODEQL_VERSION: codeql-bundle-v2.23.0
+    volumes:
+      - ./juice-shop:/src
+      - ./results/v2-23:/results
+    command: bash scan.sh
+    working_dir: /src
+
+  # Container 3: Even Older (e.g., v2.22.0)
+  scanner-v2-22:
+    build:
+      context: .
+      args:
+        CODEQL_VERSION: codeql-bundle-v2.22.0
+    volumes:
+      - ./juice-shop:/src
+      - ./results/v2-22:/results
+    command: bash scan.sh
+    working_dir: /src
