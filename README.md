@@ -1,1 +1,0 @@
-# codeql_docker
