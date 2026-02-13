@@ -8,20 +8,22 @@ codeql version
 # Navigate to the juice-shop directory
 cd juice-shop || { echo "juice-shop directory not found! Please run clone.sh first."; exit 1; }
 
-# Create database
-echo "Creating database..."
-DB_NAME="db-${CODEQL_VERSION}"
-codeql database create ../$DB_NAME --language=javascript --overwrite
+for CODEQL_BIN in "${VERSIONS[@]}"; do
+    # Extract version name
+    VERSION_NAME=$(basename $(dirname $CODEQL_BIN))
 
-# Finalize
-echo "Finalizing database..."
-codeql database finalize ../$DB_NAME
+    echo "-------------------------------"
+    echo "Running CodeQL analysis with version: $VERSION_NAME"
+    $CODEQL_BIN version
 
-# Navigate back 1 directory
-cd ..
+    # Create db
+    DB_NAME="../db-$VERSION_NAME"
+    $CODEQL_BIN database create "$DB_NAME" --language=javascript --overwrite
 
-# Run analysis
-echo "Running CodeQL analysis..."
-codeql database analyze $DB_NAME codeql/javascript-queries:codeql-suites/javascript-security-and-quality.qls --format=sarif-latest --output=results.sarif
+    # Run analysis
+    echo "Running CodeQL analysis for version: $VERSION_NAME"
+    $CODEQL_BIN database analyze "$DB_NAME" --format=csv --output="../results-$VERSION_NAME.csv"
 
-echo "Analysis complete. Results saved to results.sarif"
+done
+
+echo "All analyses completed. Results saved as results-<version>.csv"

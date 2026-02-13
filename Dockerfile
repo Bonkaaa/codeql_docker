@@ -9,16 +9,21 @@ RUN apt-get update && \
 # Set working dir for tools
 WORKDIR /opt
 
-# Argument for CodeQL version
-ARG CODEQL_VERSION
+# Download and extract CodeQL version (Can change to desired version)
+RUN wget https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.22.0/codeql-bundle-linux64.tar.gz -O 2.22.tar.gz && \
+    mkdir -p /opt/codeql-2.22 && \
+    tar -xzf 2.22.tar.gz -C /opt/codeql-2.22 --strip-components=1 && \
+    rm 2.22.tar.gz
 
-# Download CodeQL bundle
-RUN wget https://github.com/github/codeql-action/releases/download/${CODEQL_VERSION}/codeql-bundle-linux64.tar.gz -O codeql.tar.gz && \
-    tar -xzf codeql.tar.gz && \
-    rm codeql.tar.gz
+RUN wget https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.23.0/codeql-bundle-linux64.tar.gz -O 2.23.tar.gz && \
+    mkdir -p /opt/codeql-2.23 && \
+    tar -xzf 2.23.tar.gz -C /opt/codeql-2.23 --strip-components=1 && \
+    rm 2.23.tar.gz
 
-# Add CodeQL to PATH
-ENV PATH="/opt/codeql:${PATH}"
+RUN wget https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.24.0/codeql-bundle-linux64.tar.gz -O 2.24.tar.gz && \
+    mkdir -p /opt/codeql-2.24 && \
+    tar -xzf 2.24.tar.gz -C /opt/codeql-2.24 --strip-components=1 && \
+    rm 2.24.tar.gz
 
 # Set working dir for analysis
 WORKDIR /src
