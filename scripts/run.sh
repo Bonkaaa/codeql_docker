@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# CodeQL Version
-echo "Using CodeQL version"
-codeql version
-
+# CodeQL Version (The thing that use specific version in a single command as you asked for)
+VERSIONS=(
+    "/opt/codeql-2.22/codeql"
+    "/opt/codeql-2.23/codeql"
+    "/opt/codeql-2.24/codeql"
+)
 
 # Navigate to the juice-shop directory
-cd juice-shop || { echo "juice-shop directory not found! Please run clone.sh first."; exit 1; }
+cd /src/juice-shop || { echo "juice-shop directory not found! Please run clone.sh first."; exit 1; }
 
 for CODEQL_BIN in "${VERSIONS[@]}"; do
     # Extract version name
