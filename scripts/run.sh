@@ -22,10 +22,20 @@ for CODEQL_BIN in "${VERSIONS[@]}"; do
     DB_NAME="../db-$VERSION_NAME"
     $CODEQL_BIN database create "$DB_NAME" --language=javascript --overwrite
 
+    $CODEQL_BIN database finalize "$DB_NAME"
+
+    # End create db
+
+done
+
+# Analyze the databases and save results
+for CODEQL_BIN in "${VERSIONS[@]}"; do
+    VERSION_NAME=$(basename $(dirname $CODEQL_BIN))
+
+    DB_NAME="../db-$VERSION_NAME"
+
     # Run analysis
     echo "Running CodeQL analysis for version: $VERSION_NAME"
     $CODEQL_BIN database analyze "$DB_NAME" --format=csv --output="../results-$VERSION_NAME.csv"
-
-done
 
 echo "All analyses completed. Results saved as results-<version>.csv"

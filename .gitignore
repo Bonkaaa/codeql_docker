@@ -2,5 +2,8 @@ juice-shop
 juice-db
 results.csv
 results.sarif
-node-db
-query 
+query
+results-codeql-2.22.csv
+db-codeql-2.22
+db-codeql-2.23
+db-codeql-2.24

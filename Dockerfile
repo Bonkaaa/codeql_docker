@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y wget git unzip python3 python3-venv && \
+    apt-get install -y wget git unzip nodejs npm && \
     apt-get clean
 
 # Set working dir for tools
