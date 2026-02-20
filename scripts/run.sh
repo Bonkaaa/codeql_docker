@@ -37,5 +37,6 @@ for CODEQL_BIN in "${VERSIONS[@]}"; do
     # Run analysis
     echo "Running CodeQL analysis for version: $VERSION_NAME"
     $CODEQL_BIN database analyze "$DB_NAME" --format=csv --output="../results-$VERSION_NAME.csv"
+done
 
 echo "All analyses completed. Results saved as results-<version>.csv"
