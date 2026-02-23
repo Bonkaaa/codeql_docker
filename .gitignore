@@ -4,6 +4,4 @@ results.csv
 results.sarif
 query
 results-codeql-2.22.csv
-db-codeql-2.22
-db-codeql-2.23
-db-codeql-2.24
+codeqls
