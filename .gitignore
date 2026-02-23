@@ -1,6 +1,3 @@
-results.csv
-results.sarif
-query
-results-codeql-2.22.csv
+results
 codeqls
 repos
