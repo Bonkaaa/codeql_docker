@@ -1,4 +1,2 @@
-Workflow that should follow:
-1. Build_docker.sh in scripts
-2. Clone.sh in scripts
-3. Run.sh in scripts
+1. `docker compose up -d`
+2. `docker exec -it codeqls-container /bin/bash`

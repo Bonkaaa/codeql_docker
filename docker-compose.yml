@@ -1,10 +1,11 @@
 services:
-  scanner-multi:
+  codeqls:
+    container_name: codeqls-container
     build:
       context: .
+    image: codeqls:latest
     volumes:
-      - ./juice-shop:/src/juice-shop
-      - ./results:/results
-    # Run the new multi-scan script
-    command: bash /src/scripts/run.sh
-    working_dir: /src
+      - .:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
