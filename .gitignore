@@ -1,7 +1,6 @@
-juice-shop
-juice-db
 results.csv
 results.sarif
 query
 results-codeql-2.22.csv
 codeqls
+repos
