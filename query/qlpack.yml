@@ -1,0 +1,21 @@
+---
+library: false
+warnOnImplicitThis: false
+compileForOverlayEval: false
+name: codeql-query-pack
+version: 0.0.1
+
+dependencies:
+  codeql/javascript-all: 2.6.20
+  codeql/concepts: 0.0.14
+  codeql/dataflow: 2.0.24
+  codeql/mad: 1.0.40
+  codeql/regex: 1.0.40
+  codeql/ssa: 2.0.16
+  codeql/threat-models: 1.0.40
+  codeql/tutorial: 1.0.40
+  codeql/typetracking: 2.0.24
+  codeql/util: 2.0.27
+  codeql/xml: 1.0.40
+  codeql/yaml: 1.0.40
+  codeql/controlflow: 2.0.24
