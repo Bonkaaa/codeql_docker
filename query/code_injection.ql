@@ -47,4 +47,8 @@ select
 // Note: About the warning, I dont want to follow the format of the required template as its hard to read and understand, 
 // so I will just write the message in my way but from col 1 - 4, I will follow the original template. So just ignore the warning please :>
 
-// Expected output: "sink", "source", "sink", "message", "sink file path", "sink start line", "sink end line", "source file path", "source start line", "source end line"
+// Expected output: 
+// primary,sourcenode,sinknode,message,sink_file,sink_start_line,sink_end_line,source_file,source_start_line,source_end_line
+// "documen ... t="")+8)","documen ... on.href","documen ... t="")+8)","This code execution depends on $@ (source at CodeInjection.js:1).","CodeInjection.js",1,1,"CodeInjection.js",1,1
+
+// If encountering permssion issue, please run "chmod 644 {path_to_csv_file}"
