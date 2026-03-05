@@ -37,6 +37,8 @@ tmp="$(mktemp)"
 } > "$tmp"
 mv "$tmp" /app/results/code-injection.csv
 
+chmod 644 /app/results/code-injection.csv
+
 echo "Done. Results are in /app/results/code-injection.csv"
 
 popd
