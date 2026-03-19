@@ -1,0 +1,11 @@
+file_path,start_line,start_column,end_line,end_column,type,stage,vulnerable_function,path_norm,CVE
+/processed/path-traversal/hangersteak_0.2.2/after/lib/hangersteak.js,45,40,45,47,path-traversal,after,,/processed/path-traversal/hangersteak_0.2.2/STAGE/lib/hangersteak.js,hangersteak_0.2.2
+/processed/path-traversal/serve-here.js_1.1.0/after/source/server.js,21,25,21,32,path-traversal,after,,/processed/path-traversal/serve-here.js_1.1.0/STAGE/source/server.js,serve-here.js_1.1.0
+/processed/path-traversal/@vivaxy-here_3.1.0/after/lib/open-browser.js,14,23,14,49,path-traversal,after,,/processed/path-traversal/@vivaxy-here_3.1.0/STAGE/lib/open-browser.js,@vivaxy-here_3.1.0
+/processed/path-traversal/m-server_1.4.0/after/lib/index.js,37,31,37,64,path-traversal,after,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/hostr_2.0.0/after/lib/routes/statics.js,13,24,13,83,path-traversal,after,,/processed/path-traversal/hostr_2.0.0/STAGE/lib/routes/statics.js,hostr_2.0.0
+/processed/path-traversal/hostr_2.0.0/after/lib/routes/statics.js,13,24,13,61,path-traversal,after,,/processed/path-traversal/hostr_2.0.0/STAGE/lib/routes/statics.js,hostr_2.0.0
+/processed/path-traversal/@vivaxy-here_3.1.0/after/res/reload.js,770,28,770,43,path-traversal,after,,/processed/path-traversal/@vivaxy-here_3.1.0/STAGE/res/reload.js,@vivaxy-here_3.1.0
+/processed/path-traversal/hostr_2.0.0/after/lib/routes/statics.js,13,24,13,69,path-traversal,after,,/processed/path-traversal/hostr_2.0.0/STAGE/lib/routes/statics.js,hostr_2.0.0
+/processed/path-traversal/hostr_2.0.0/after/lib/routes/statics.js,13,24,13,47,path-traversal,after,,/processed/path-traversal/hostr_2.0.0/STAGE/lib/routes/statics.js,hostr_2.0.0
+/processed/path-traversal/angular-http-server_1.0.0/after/angular-http-server.js,18,13,18,37,path-traversal,after,,/processed/path-traversal/angular-http-server_1.0.0/STAGE/angular-http-server.js,angular-http-server_1.0.0

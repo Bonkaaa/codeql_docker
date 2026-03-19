@@ -1,0 +1,16 @@
+file_path,start_line,start_column,end_line,end_column,type,stage,vulnerable_function,path_norm,CVE
+/processed/path-traversal/angular-http-server_1.0.0/before/angular-http-server.js,46,13,46,28,path-traversal,before,,/processed/path-traversal/angular-http-server_1.0.0/STAGE/angular-http-server.js,angular-http-server_1.0.0
+/processed/path-traversal/angular-http-server_1.0.0/before/angular-http-server.js,49,42,49,57,path-traversal,before,,/processed/path-traversal/angular-http-server_1.0.0/STAGE/angular-http-server.js,angular-http-server_1.0.0
+/processed/path-traversal/glance_3.0.0/before/index.js,59,11,59,26,path-traversal,before,statFile,/processed/path-traversal/glance_3.0.0/STAGE/index.js,glance_3.0.0
+/processed/path-traversal/hangersteak_0.2.2/before/lib/hangersteak.js,45,40,45,47,path-traversal,before,,/processed/path-traversal/hangersteak_0.2.2/STAGE/lib/hangersteak.js,hangersteak_0.2.2
+/processed/path-traversal/hangersteak_0.2.2/before/lib/hangersteak.js,70,15,70,22,path-traversal,before,,/processed/path-traversal/hangersteak_0.2.2/STAGE/lib/hangersteak.js,hangersteak_0.2.2
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,9,27,9,36,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,10,43,10,52,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,12,41,12,50,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,14,28,14,37,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,22,49,22,74,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/serve-here.js_1.1.0/before/source/server.js,15,25,15,32,path-traversal,before,,/processed/path-traversal/serve-here.js_1.1.0/STAGE/source/server.js,serve-here.js_1.1.0
+/processed/path-traversal/@vivaxy-here_3.1.0/before/lib/open-browser.js,14,23,14,49,path-traversal,before,,/processed/path-traversal/@vivaxy-here_3.1.0/STAGE/lib/open-browser.js,@vivaxy-here_3.1.0
+/processed/path-traversal/m-server_1.4.0/before/lib/index.js,30,31,30,64,path-traversal,before,,/processed/path-traversal/m-server_1.4.0/STAGE/lib/index.js,m-server_1.4.0
+/processed/path-traversal/@vivaxy-here_3.1.0/before/res/reload.js,770,28,770,43,path-traversal,before,,/processed/path-traversal/@vivaxy-here_3.1.0/STAGE/res/reload.js,@vivaxy-here_3.1.0
+/processed/path-traversal/angular-http-server_1.0.0/before/angular-http-server.js,18,13,18,37,path-traversal,before,,/processed/path-traversal/angular-http-server_1.0.0/STAGE/angular-http-server.js,angular-http-server_1.0.0

@@ -1,0 +1,7 @@
+name: "restricted-scope"
+paths:
+  - processed/**/*.js
+paths-ignore:
+  - codeql/**/*.js
+  - repos/**/*.js
+  - results/**/*.js

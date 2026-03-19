@@ -19,6 +19,7 @@ echo "Run query"
   /app/results/prototype-pollution-2.0 \
   --format=csv \
   --output=/app/results/prototype-pollution-2.0.csv \
-  --threads=2 
+  --threads=2 \
+  --ram=12000
 
 popd
